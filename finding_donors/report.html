@@ -13098,7 +13098,8 @@ What I can see is that RandomeForest has higher variance compared to Logistic Re
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> 
 The chosen model will predict whether a person make more than 50K (&gt; 50K, class 1) or make at most 50K (&lt;=50K, class 0). This model will take person features (such as age, workclass, education-level, marital-status, etc.) and based on that will try to predict if that person belongs to either class 1 or 0.</p>
-<p>The model was trained based on a dataset which contains person features (age, workclass, education-level, etc.) and its corresponding label, in other words, the dataset was already labeled so that a supervised learning technique was used. The technique used to classify new persons will be a logistic regression technique, this technique will calculate the probability for that person belongs to a class 1.</p>
+<p>The model was trained based on a dataset which contains person features (age, workclass, education-level, etc.) and its corresponding label, in other words, the dataset was already labeled so that a supervised learning technique was used. The technique used to classify new persons will be a logistic regression technique, this technique will calculate the probability</p>
+<p>In training phase, the idea behind is to build a mechanism to separate both classes (0 or 1), called decision boundary. When the space of the data is small, we are talking about a simple line or a plane. When the data space get bigger, the mentioned mechanism is more complex. This decision boundary mechanism will be used to classify new records using a probability threshold.</p>
 
 </div>
 </div>
